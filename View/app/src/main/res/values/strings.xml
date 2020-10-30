@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">View</string>
+    <string name="text_view">Input your phone number : </string>
+    <string name="button">Next</string>
+    <string name="edit_text">ex : 082133445567</string>
+    <string name="image_view">Logo</string>
+    <string name="image_button">Exit</string>
+</resources>
