@@ -3,7 +3,7 @@ Activity Lifecycle
  1. When the app is running for the first time
     onCreate -> onStart -> onResume
 
- 2. When the app is out (the app is still running)
+ 2. When the app is out/minimize (the app is still running)
     onPause -> onStop
 
  3. when the app is closed (the app is not running)
