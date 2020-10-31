@@ -23,17 +23,18 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:backgroundTint="@color/black"
         android:padding="10sp"
         android:text="@string/button"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.68" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -46,22 +47,26 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.37"
-        app:srcCompat="@drawable/ic_launcher_foreground"
-        android:contentDescription="@string/image_view" />
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/image_view"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="75sp"
-        android:layout_height="75sp"
-        android:background="@null"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/image_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="100"
+        app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0"
-        app:srcCompat="@android:drawable/btn_dialog"
-        android:contentDescription="@string/image_button" />
+        app:layout_constraintVertical_bias="0.02"
+        android:src="@drawable/ic_baseline_exit_to_app_24"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
 
     <EditText
         android:layout_width="300sp"
@@ -69,7 +74,7 @@
         android:autofillHints="@string/edit_text"
         android:background="@drawable/border"
         android:hint="@string/edit_text"
-        android:inputType="text"
+        android:inputType="phone"
         android:padding="15sp"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -77,6 +82,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.6"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="10sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
