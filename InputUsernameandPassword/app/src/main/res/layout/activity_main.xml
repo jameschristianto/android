@@ -28,6 +28,7 @@
             android:textSize="20sp"
             android:layout_margin="5dp"
             android:textColor="@color/grey"
+            android:focusable="false"
             android:autofillHints="@string/username"
             android:hint="@string/username" />
 

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Team A"/>
+
+                <TextView
+                    android:id="@+id/tvScoreA"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:textSize="100sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="0"/>
+
+                <Button
+                    android:id="@+id/btnPlusA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+1"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@android:color/holo_blue_light"/>
+
+                <Button
+                    android:id="@+id/btnMinusA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-1"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/holo_blue_light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Team B"/>
+
+                <TextView
+                    android:id="@+id/tvScoreB"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:textSize="100sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="0"/>
+
+                <Button
+                    android:id="@+id/btnPlusB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+1"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@android:color/holo_blue_light"/>
+
+                <Button
+                    android:id="@+id/btnMinusB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-1"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@android:color/holo_blue_light"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:background="@android:color/holo_blue_light"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+
+</ScrollView>
