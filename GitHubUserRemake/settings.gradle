@@ -1,0 +1,2 @@
+rootProject.name = "GitHubUserRemake"
+include ':app'
